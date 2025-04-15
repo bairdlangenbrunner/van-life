@@ -1,0 +1,74 @@
+@import "./tailwindcss-colors.css";
+
+*,
+:before,
+:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+/* contains nav, main (and footer) */
+.div-app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--orange-100);
+  height: 100vh;
+}
+
+main {
+  width: 700px;
+  background-color: var(--orange-50);
+  height: 100%;
+}
+
+/* a {
+  text-decoration: none;
+} */
+
+nav {
+  width: 100vw;
+  background-color: var(--warmGray-950);
+  color: var(--warmGray-100);
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  position: sticky;
+  font-weight: 700;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: inherit;
+}
+
+nav a:hover {
+  color: var(--orange-300)
+}
+
+nav a:active {
+  color: var(--orange-400)
+}
+
+.div-navbar-rhs {
+  display: flex;
+  gap: 16px;
+}
+
+footer {
+  background-color: var(--warmGray-950);
+  color: var(--warmGray-100);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  font-size: 14px;
+}
